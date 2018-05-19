@@ -1,0 +1,72 @@
+@import "layout/mixins";
+@import "layout/extends";
+
+%grid12 {
+	display: grid;
+
+	@media (min-width: 550px) {
+		grid-column-gap: 2rem;
+		grid-row-gap: 1rem;
+		grid-template-columns: unquote("repeat(12, [col] 1fr)");
+	}
+}
+%grid12-row {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.section-row {
+	width: 100%;
+}
+
+.topic,
+.heading {
+	width: 100%;
+}
+
+.topic-wrapper {
+	@extend %grid12;
+	@extend %grid12-row;
+}
+
+.heading-wrapper {
+	@extend %grid12;
+	@extend %grid12-row;
+}
+
+nav {
+	grid-row: 1;
+	grid-column: col / span 12;
+}
+
+nav ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+
+	list-style: none;
+	width: 100%;
+}
+
+.global-nav {
+}
+
+.global-nav li {
+	padding: 2rem;
+	margin-bottom: 0;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.global-nav li a {
+	text-decoration: none;
+	padding-top: 6rem;
+}
+
+.global-nav li a.global-nav__img {
+	padding-top: 0;
+}

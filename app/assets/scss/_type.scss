@@ -1,0 +1,88 @@
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: $heading-top-margin;
+	margin-bottom: $heading-bottom-margin;
+	font-weight: $font-weight-heading;
+}
+
+//
+// heading font sizes
+//
+h1 {
+	font-size: $font-mobile-h1-size;
+}
+h2 {
+	font-size: $font-mobile-h1-size * 0.9;
+}
+h3 {
+	font-size: $font-mobile-h1-size * 0.75;
+}
+h4 {
+	font-size: $font-mobile-h1-size * 0.6;
+}
+h5 {
+	font-size: $font-mobile-h1-size * 0.45;
+}
+h6 {
+	font-size: $font-mobile-h1-size * 0.375;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	h1 {
+		font-size: $font-desktop-h1-size;
+	}
+	h2 {
+		font-size: $font-desktop-h1-size * 0.84;
+	}
+	h3 {
+		font-size: $font-desktop-h1-size * 0.72;
+	}
+	h4 {
+		font-size: $font-desktop-h1-size * 0.6;
+	}
+	h5 {
+		font-size: $font-desktop-h1-size * 0.48;
+	}
+	h6 {
+		font-size: $font-desktop-h1-size * 0.3;
+	}
+}
+
+//
+// heading type specs
+//
+h1 {
+	line-height: $font-h1-lh;
+	letter-spacing: -0.1rem;
+}
+h2 {
+	line-height: $font-h2-lh;
+	letter-spacing: -0.1rem;
+}
+h3 {
+	line-height: $font-h3-lh;
+	letter-spacing: -0.1rem;
+}
+h4 {
+	line-height: $font-h4-lh;
+	letter-spacing: -0.08rem;
+}
+h5 {
+	line-height: $font-h5-lh;
+	letter-spacing: -0.05rem;
+}
+h6 {
+	line-height: $font-h6-lh;
+	letter-spacing: 0;
+}
+
+p {
+	margin-top: 0;
+}

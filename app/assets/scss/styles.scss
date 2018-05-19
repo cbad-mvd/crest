@@ -1,0 +1,56 @@
+/* Main CSS File for Crest School
+
+Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+ - Config
+ - Normalize
+ - Base Styles
+ - Typography
+ - Layout
+*/
+
+@import "config";
+@import "normalize";
+@import "base";
+@import "type";
+@import "layout";
+
+/*
+ * some basic stuff for demo page
+ */
+body {
+	background-color: #eee;
+}
+
+.page {
+	margin: 2rem auto;
+	padding: 5rem;
+	width: 100%;
+	max-width: 960px;
+	background-color: #fff;
+	border-radius: 1rem;
+}
+
+.docs-content {
+	margin-bottom: 4rem;
+}
+
+.docs-header {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	letter-spacing: 0.2rem;
+	font-weight: 600;
+	color: $color-headings-highlight;
+}
+
+.button-wrapper {
+	margin-bottom: 2rem;
+}
+
+.side-by-side {
+	display: flex;
+}
+.side-by-side > div,
+.side-by-side > ul {
+	width: 50%;
+}

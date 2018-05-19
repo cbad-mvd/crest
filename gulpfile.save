@@ -1,0 +1,66 @@
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var cssnano = require('gulp-cssnano');
+var useref = require('gulp-useref');
+var uglify = require('gulp-uglify');
+var cacheBuster = require('gulp-cache-bust');
+var imagemin = require('gulp-imagemin');
+var gulpIf = require('gulp-if');
+var cache = require('gulp-cache');
+var del = require('del');
+var runSequence = require('run-sequence');
+
+
+gulp.task('sass', function(){
+  return gulp.src('app/assets/scss/styles.scss')
+	.pipe(sass()) // Using gulp-sass
+	.pipe(autoprefixer())
+	.pipe(gulp.dest('app/css'))
+});
+
+gulp.task('copy-js', function(){
+	return gulp.src('app/assets/js/*.+(js)')
+		.pipe(gulp.dest('dist/assets/js'));
+});
+
+gulp.task('images', function(){
+	return gulp.src('app/assets/img/v7/**/*.+(png|jpg|jpeg|gif|svg)')
+		.pipe(cache(imagemin()))
+		.pipe(gulp.dest('dist/assets/img/v7'));
+});
+
+gulp.task('css-images', function(){
+	return gulp.src('app/assets/css/img/v7/**/*.+(png|jpg|jpeg|gif|svg)')
+		.pipe(cache(imagemin()))
+		.pipe(gulp.dest('dist/assets/css/img/v7'));
+});
+
+gulp.task('useref', function(){
+	return gulp.src('app/*.html')
+		.pipe(useref())
+		.pipe(gulpIf('*.js', uglify()))
+		.pipe(gulpIf('*.css', cssnano()))
+		.pipe(gulp.dest('dist'));
+})
+
+// cacheBuster looks at the css and js files and appends a hash to the
+// request to cause the file to get reloaded when the file changes.
+gulp.task('cacheBuster', function () {
+	return gulp.src('dist/*.html')
+		.pipe(cacheBuster({}))
+		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('clean:dist', function() {
+	return del.sync('dist');
+})
+
+gulp.task('build', function (callback) {
+	runSequence('clean:dist', 
+		['sass', 'images', 'css-images', 'useref', 'copy-js'],
+		'cacheBuster',
+		callback
+		)
+})
+

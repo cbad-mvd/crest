@@ -1,0 +1,39 @@
+/* NOTE html is set to 62.5% so that all the 
+ *      REM measurements are based on 10px sizing. 
+ *      So basically 1.5rem = 15px 
+ */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: $font-size;
+	line-height: $font-line-height;
+	font-weight: $font-weight;
+	font-family: $font-stack;
+	color: $color-bodytext;
+}
+
+/*
+ * set box-sizing to use border-box by default
+ */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
