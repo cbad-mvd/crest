@@ -527,7 +527,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 0.2em;
+  margin-bottom: 2rem;
   font-weight: 300;
 }
 
@@ -611,36 +611,89 @@ p {
   margin-top: 0;
 }
 
-.topic-wrapper, .heading-wrapper {
-  display: grid;
-}
-
-@media (min-width: 550px) {
-  .topic-wrapper, .heading-wrapper {
-    grid-column-gap: 2rem;
-    grid-row-gap: 1rem;
-    grid-template-columns: repeat(12, [col] 1fr);
-  }
-}
-
-.topic-wrapper, .heading-wrapper {
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 .section-row {
   width: 100%;
 }
 
 .topic,
-.heading {
+.heading,
+.content {
   width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+  grid-template-columns: repeat(12, [col] 1fr);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-top: 1px solid #eee;
+}
+
+body.style-guide {
+  width: 100%;
+  max-width: 800;
+  margin: 0 auto;
+}
+
+.heading .wrapper {
+  padding-top: 2rem;
+  border-top: none;
+}
+
+.heading .wrapper {
+  padding-bottom: 0;
 }
 
 nav {
   grid-row: 1;
-  grid-column: col / span 12;
+  grid-column: 1/span 12;
+}
+
+.intro,
+.sidebar,
+.body {
+  padding: 0 3rem;
+}
+
+.typeography .body {
+  grid-row: 1;
+  grid-column: 1/span 7;
+}
+
+.typeography .sidebar {
+  grid-row: 1;
+  grid-column: 8/span 5;
+}
+
+.btns .body {
+  grid-row: 1;
+  grid-column: 1/span 12;
+}
+
+.btns .sidebar {
+  grid-row: 2;
+  grid-column: 2/span 12;
+  padding: 0 3rem;
+}
+
+.lists .intro {
+  grid-row: 1;
+  grid-column: 1/span 12;
+}
+
+.lists .body {
+  grid-row: 2;
+  grid-column: 7/span 6;
+}
+
+.lists .sidebar {
+  grid-row: 2;
+  grid-column: 1/span 6;
 }
 
 nav ul {
@@ -688,7 +741,7 @@ nav ul {
  * some basic stuff for demo page
  */
 body {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .page {

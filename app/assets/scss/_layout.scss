@@ -1,43 +1,69 @@
 @import "layout/mixins";
 @import "layout/extends";
 
-%grid12 {
-	display: grid;
-
-	@media (min-width: 550px) {
-		grid-column-gap: 2rem;
-		grid-row-gap: 1rem;
-		grid-template-columns: unquote("repeat(12, [col] 1fr)");
-	}
-}
-%grid12-row {
-	width: 90%;
-	max-width: 960px;
-	margin: 0 auto;
-}
-
 .section-row {
 	width: 100%;
 }
 
 .topic,
-.heading {
+.heading,
+.content {
 	width: 100%;
 }
 
-.topic-wrapper {
-	@extend %grid12;
-	@extend %grid12-row;
+.wrapper {
+	@include wrapper-setup(100%, 960px);
+	@include grid-setup(12);
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	border-top: 1px solid #eee;
 }
 
-.heading-wrapper {
-	@extend %grid12;
-	@extend %grid12-row;
+body.style-guide {
+	@include wrapper-setup(100%, 800);
+}
+
+.heading .wrapper {
+	padding-top: 2rem;
+	border-top: none;
+}
+.heading .wrapper {
+	padding-bottom: 0;
 }
 
 nav {
-	grid-row: 1;
-	grid-column: col / span 12;
+	@include grid-column-setup(1, 1, 12);
+}
+
+.intro,
+.sidebar,
+.body {
+	padding: 0 3rem;
+}
+
+.typeography .body {
+	@include grid-column-setup(1, 1, 7);
+}
+.typeography .sidebar {
+	@include grid-column-setup(1, 8, 5);
+}
+
+.btns .body {
+	@include grid-column-setup(1, 1, 12);
+}
+.btns .sidebar {
+	@include grid-column-setup(2, 2, 12);
+	padding: 0 3rem;
+}
+
+.lists .intro {
+	@include grid-column-setup(1, 1, 12);
+}
+.lists .body {
+	@include grid-column-setup(2, 7, 6);
+}
+.lists .sidebar {
+	@include grid-column-setup(2, 1, 6);
 }
 
 nav ul {
