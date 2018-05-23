@@ -30,10 +30,10 @@ const paths = {
 		css: "*.css"
 	},
 	images: {
-		src: "app/assets/img/v7/**/*.+(png|jpg|jpeg|gif|svg)",
-		prod: "dist/assets/img/v7/",
-		css_src: "app/assets/css/img/v7/**/*.+(png|jpg|jpeg|gif|svg)",
-		css_prod: "dist/assets/css/img/v7/"
+		src: "app/assets/img/**/*.+(png|jpg|jpeg|gif|svg)",
+		prod: "dist/assets/img/",
+		css_src: "app/assets/css/img/**/*.+(png|jpg|jpeg|gif|svg)",
+		css_prod: "dist/assets/css/img/"
 	},
 	html: {
 		src: "app/*.html",
