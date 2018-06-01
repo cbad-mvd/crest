@@ -37,3 +37,13 @@ img {
 	display: table;
 	clear: both;
 }
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+	color: $color-link;
+	text-decoration: none;
+}
+a:hover {
+	color: $color-link-hover;
+}

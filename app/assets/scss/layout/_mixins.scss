@@ -1,20 +1,24 @@
-@mixin grid-setup($grids: 12, $col-gap: 0rem, $row-gap: 0rem) {
+@mixin grid-setup($grids: 1, $col-gap: 0rem, $row-gap: 0rem) {
 	display: grid;
-
 	grid-column-gap: $col-gap;
 	grid-row-gap: $row-gap;
 	grid-template-columns: unquote("repeat(" + $grids + ", [col] 1fr)");
-	@media (min-width: 550px) {
-	}
 }
 
 @mixin wrapper-setup($w: 100%, $mw: 800px) {
 	width: $w;
 	max-width: $mw;
 	margin: 0 auto;
+
+	@media (min-width: 750px) {
+	}
 }
 
 @mixin grid-column-setup($row: 1, $col: 1, $span: 12) {
 	grid-row: $row;
-	grid-column: $col / span $span;
+	grid-column: $col;
+
+	@media (min-width: 750px) {
+		grid-column: $col / span $span;
+	}
 }

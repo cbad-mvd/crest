@@ -1,0 +1,175 @@
+.about .copy,
+.glance .copy,
+.contact .copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.glance ul {
+	list-style: none;
+}
+
+//
+// footer styles
+//
+.copyright,
+.nav {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 1rem;
+	text-align: center;
+	padding-bottom: 0.5rem;
+
+	@media (min-width: 750px) {
+		padding-bottom: 0;
+	}
+}
+
+.layout-two .copyright,
+.layout-two .nav {
+	font-size: 1rem;
+	color: darken($color-content-bg, 10%);
+}
+
+.copyright {
+	@media (min-width: 750px) {
+		text-align: left;
+	}
+}
+.nav {
+	display: inline-block;
+	@media (min-width: 750px) {
+		text-align: right;
+	}
+}
+.nav li {
+	display: inline-block;
+	padding: 0 2rem;
+	margin: 0;
+}
+
+.layout-two .nav li a {
+	color: darken($color-content-bg, 10%);
+}
+.layout-two .nav li a:hover {
+	color: darken($color-content-bg, 0%);
+}
+
+.spotlight {
+	text-align: center;
+	padding: 1rem 0;
+	grid-column: 3 / span 9;
+
+	@media (min-width: 400px) {
+		grid-column: 2 / span 10;
+	}
+
+	@media (min-width: 750px) {
+		grid-column: auto;
+	}
+}
+
+.spotlight > img {
+	margin-bottom: 2rem;
+}
+
+.spotlight .copy {
+	padding: 1.5rem 2rem;
+	text-align: justify;
+}
+
+$feature-border-color: #ccc;
+$feature-border-width: 1px;
+
+.features {
+	//	background-color: lighten($color-grain, 10%);
+	background-color: transparent;
+	border-width: $feature-border-width 0 0 0;
+	border-style: solid;
+	border-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0),
+			$feature-border-color,
+			rgba(0, 0, 0, 0)
+		)
+		100% 1;
+	padding-top: 5rem;
+}
+
+.feature {
+	text-align: center;
+	padding: 1rem 3rem;
+}
+
+.feature > img {
+	margin-bottom: 2rem;
+}
+
+.feature .copy {
+	padding: 1.5rem;
+}
+
+.feature {
+	//border-right: 1px solid $feature-border-color;
+	border-width: 0 $feature-border-width 0 0;
+	border-style: solid;
+	border-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			$feature-border-color,
+			rgba(0, 0, 0, 0)
+		)
+		1 100%;
+
+	min-height: 30rem;
+}
+
+.feature:last-child {
+	border-width: $feature-border-width 0 0 0;
+	border-style: solid;
+	border-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0),
+			$feature-border-color,
+			rgba(0, 0, 0, 0)
+		)
+		100% 1;
+	border-right: none;
+	padding-top: 6rem;
+
+	@media (min-width: 750px) {
+		border: none;
+		padding-top: 1rem;
+	}
+}
+
+.layout-two .button,
+.layout-two button,
+.layout-two input[type="submit"],
+.layout-two input[type="reset"],
+.layout-two input[type="button"] {
+	//background-color: $color-header-bg;
+	color: #ccc;
+}
+
+.layout-two .button:hover,
+.layout-two button:hover,
+.layout-two input[type="submit"]:hover,
+.layout-two input[type="reset"]:hover,
+.layout-two input[type="button"]:hover,
+.layout-two .button:focus,
+.layout-two button:focus,
+.layout-two input[type="submit"]:focus,
+.layout-two input[type="reset"]:focus,
+.layout-two input[type="button"]:focus {
+	background-color: transparent;
+	color: $color-header-bg;
+	border-color: #888;
+	outline: 0;
+}
+
+.layout-two .maincontent h1 {
+	color: $color-header-bg;
+}

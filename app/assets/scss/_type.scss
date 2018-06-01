@@ -86,3 +86,27 @@ h6 {
 p {
 	margin-top: 0;
 }
+
+/* Larger than phablet */
+.about h2,
+.spotlights h2,
+.features h2,
+.glance h2,
+.contact h2 {
+	font-size: $font-desktop-h1-size * 0.2;
+}
+.about h6,
+.features h6,
+.glance h6,
+.contact h6 {
+	font-size: $font-desktop-h1-size * 0.4;
+}
+
+.spotlights h6 {
+	font-size: $font-desktop-h1-size * 0.35;
+}
+@media (min-width: 750px) {
+	.spotlights h6 {
+		font-size: $font-desktop-h1-size * 0.25;
+	}
+}

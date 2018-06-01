@@ -13,23 +13,14 @@ Table of contents
 @import "normalize";
 @import "base";
 @import "type";
-@import "layout";
+@import "layout2";
 @import "ui";
 
 /*
  * some basic stuff for demo page
  */
-body {
-	background-color: #fff;
-}
-
-.page {
-	margin: 2rem auto;
-	padding: 5rem;
-	width: 100%;
-	max-width: 960px;
-	background-color: #fff;
-	border-radius: 1rem;
+.hidden {
+	display: none;
 }
 
 .docs-content {

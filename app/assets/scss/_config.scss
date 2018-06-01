@@ -1,7 +1,8 @@
 //
 // base colors
 //
-$alpha_primary: #5a2e2e; // red
+$alpha_primary: #5e1c1c; // red
+$alpha_primary: #791b1b; // red
 $bravo_primary: #3e4147; // green
 $charlie_primary: #fffedf; // yellow
 $delta_primary: #2a2c31; // blue
@@ -11,6 +12,12 @@ $alpha_gray: #333; //black
 $color-bodytext: $alpha_gray;
 $color-headings: $alpha_gray;
 $color-headings-highlight: $alpha_primary;
+
+//
+// link colors
+//
+$color-link: $alpha_gray;
+$color-link-hover: lighten($alpha_primary, 20%);
 
 //
 // default font settings for app
@@ -42,3 +49,28 @@ $font-h6-lh: 1.6;
 $heading-top-margin: 0;
 $heading-bottom-margin: 0.2em;
 $heading-bottom-margin: 2rem;
+
+// layout-two colors
+.jim {
+	color: #c06014;
+	color: #eddbcd;
+	color: #000000;
+	color: #cdcdcd;
+
+	// warm tones
+	color: #d7cec7; // grain
+	color: #565656; // blackboard
+	color: #76323f; // oxblood
+	color: #c09f80; // tan
+}
+
+// warm tones
+$color-grain: #d7cec7;
+$color-blackboard: #565656;
+$color-oxblood: #76323f;
+$color-tan: #c09f80;
+
+$color-page-bg: $color-grain;
+$color-header-bg: $color-oxblood;
+$color-content-bg: lighten($color-grain, 15%);
+$color-footer-bg: $color-blackboard;
