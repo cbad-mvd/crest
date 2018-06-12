@@ -1203,6 +1203,36 @@ nav ul {
   }
 }
 
+.body-img__left {
+  width: 65%;
+  float: left;
+  padding: 2rem 4rem;
+}
+
+.body-img__right {
+  width: 65%;
+  float: right;
+  padding: 2rem 4rem;
+}
+
+.small-img {
+  width: 30%;
+  padding: 1rem 2rem;
+}
+
+.quiklinks {
+  margin-top: 15rem;
+  margin-left: 4rem;
+}
+
+.quiklinks ul {
+  list-style: none;
+}
+
+.quiklinks li a.selected {
+  color: #cc2e2e;
+}
+
 .contact-info {
   width: 90%;
   margin: 0 auto 4rem;
@@ -1245,6 +1275,11 @@ nav ul {
 
 .layout-two .maincontent h1 {
   color: #333;
+}
+
+.page-title.aleft {
+  text-align: left;
+  padding: 0 2rem;
 }
 
 /*
