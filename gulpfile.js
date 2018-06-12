@@ -36,9 +36,9 @@ const paths = {
 		css_prod: "dist/assets/css/img/"
 	},
 	html: {
-		src: "app/*.html",
+		src: "app/**/*.html",
 		prod: "dist/",
-		prod_html: "dist/*.html"
+		prod_html: "dist/**/*.html"
 	}
 };
 
