@@ -108,7 +108,8 @@ $feature-border-width: 1px;
 }
 
 .feature .copy {
-	padding: 1.5rem;
+	//padding: 1.5rem;
+	text-align: justify;
 }
 
 .feature {
@@ -145,6 +146,22 @@ $feature-border-width: 1px;
 	}
 }
 
+.contact-info {
+	width: 90%;
+	margin: 0 auto 4rem;
+	text-align: left;
+}
+
+.contact-info td {
+	vertical-align: top;
+	padding: 0 1rem;
+}
+
+.contact-info td.label {
+	text-align: right;
+	padding-right: 0;
+}
+
 .layout-two .button,
 .layout-two button,
 .layout-two input[type="submit"],
@@ -171,5 +188,5 @@ $feature-border-width: 1px;
 }
 
 .layout-two .maincontent h1 {
-	color: $color-header-bg;
+	color: $color-headings-highlight;
 }

@@ -12,6 +12,7 @@ $alpha_gray: #333; //black
 $color-bodytext: $alpha_gray;
 $color-headings: $alpha_gray;
 $color-headings-highlight: $alpha_primary;
+$color-headings-highlight: $alpha_gray;
 
 //
 // link colors
@@ -68,9 +69,11 @@ $heading-bottom-margin: 2rem;
 $color-grain: #d7cec7;
 $color-blackboard: #565656;
 $color-oxblood: #76323f;
+$color-oxblood: #e60c26;
 $color-tan: #c09f80;
 
 $color-page-bg: $color-grain;
 $color-header-bg: $color-oxblood;
 $color-content-bg: lighten($color-grain, 15%);
 $color-footer-bg: $color-blackboard;
+$color-header-text: #791b1b;

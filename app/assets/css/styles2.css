@@ -704,7 +704,7 @@ body {
 }
 
 .page .mainheader {
-  background-color: #76323f;
+  background-color: #e60c26;
   border-radius: 0;
   position: relative;
 }
@@ -1356,7 +1356,7 @@ nav ul {
 }
 
 .feature .copy {
-  padding: 1.5rem;
+  text-align: justify;
 }
 
 .feature {
@@ -1385,6 +1385,22 @@ nav ul {
   }
 }
 
+.contact-info {
+  width: 90%;
+  margin: 0 auto 4rem;
+  text-align: left;
+}
+
+.contact-info td {
+  vertical-align: top;
+  padding: 0 1rem;
+}
+
+.contact-info td.label {
+  text-align: right;
+  padding-right: 0;
+}
+
 .layout-two .button,
 .layout-two button,
 .layout-two input[type="submit"],
@@ -1404,13 +1420,13 @@ nav ul {
 .layout-two input[type="reset"]:focus,
 .layout-two input[type="button"]:focus {
   background-color: transparent;
-  color: #76323f;
+  color: #e60c26;
   border-color: #888;
   outline: 0;
 }
 
 .layout-two .maincontent h1 {
-  color: #76323f;
+  color: #333;
 }
 
 /*
@@ -1428,13 +1444,22 @@ nav ul {
   text-align: center;
 }
 
+.page-intro p {
+  text-align: justify;
+  padding: 0 2rem;
+}
+
+.page-title {
+  text-transform: uppercase;
+}
+
 .topic-header,
 .docs-header {
   text-transform: uppercase;
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   font-weight: 600;
-  color: #791b1b;
+  color: #333;
 }
 
 .button-wrapper {
