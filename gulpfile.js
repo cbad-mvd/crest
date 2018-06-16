@@ -10,6 +10,8 @@ const imagemin = require("gulp-imagemin");
 const cachebust = require("gulp-cache-bust");
 const del = require("del");
 
+const branch = "develop";
+
 const paths = {
 	root: {
 		src: "app/",
