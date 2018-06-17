@@ -175,7 +175,6 @@ nav ul {
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-content: center;
-
 	list-style: none;
 	width: 100%;
 }
@@ -186,10 +185,6 @@ nav ul {
 .global-nav li {
 	padding: 1.5rem;
 	margin-bottom: 0;
-
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
 
 	@media (min-width: 750px) {
 		padding: 2rem 3.5rem;
