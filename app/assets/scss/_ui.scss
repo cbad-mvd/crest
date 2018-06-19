@@ -60,15 +60,6 @@
 .spotlight {
 	text-align: center;
 	padding: 1rem 0;
-	grid-column: 3 / span 9;
-
-	@media (min-width: 400px) {
-		grid-column: 2 / span 10;
-	}
-
-	@media (min-width: 750px) {
-		grid-column: auto;
-	}
 }
 
 .spotlight > img {
@@ -76,7 +67,6 @@
 }
 
 .spotlight .copy {
-	padding: 1.5rem 2rem;
 	text-align: justify;
 }
 
@@ -162,9 +152,14 @@ $feature-border-width: 1px;
 	width: 30%;
 	padding: 1rem 2rem;
 }
+
 .quiklinks {
-	margin-top: 15rem;
+	margin-top: 2rem;
 	margin-left: 4rem;
+	@media (min-width: 750px) {
+		margin-top: 15rem;
+		margin-left: 4rem;
+	}
 }
 
 .quiklinks ul {
