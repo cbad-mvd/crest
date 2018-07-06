@@ -110,3 +110,15 @@ p {
 		font-size: $font-desktop-h1-size * 0.25;
 	}
 }
+
+.quote-msg {
+	font-family: $em-font-stack;
+	font-size: 2.5rem;
+	font-style: italic;
+}
+
+.quote-msg cite {
+	font-family: $font-stack;
+	font-size: 1.5rem;
+	font-style: normal;
+}

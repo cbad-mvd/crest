@@ -10,6 +10,7 @@ body {
 .page {
 	width: 100%;
 	max-width: 960px;
+	max-width: 1200px;
 	margin: 0;
 	padding: 0;
 	background-color: $color-page-bg;
@@ -165,6 +166,29 @@ body {
 	@include grid-setup(2);
 }
 
+.testimonials .full-wrapper {
+	display: block;
+	@include flex-setup(center, center, nowrap, column);
+	min-height: 20rem;
+	background-color: #d7cec7;
+	background-color: $color-testimonial;
+}
+
+.testimonials .quote-msg {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.testimonials .quote-msg p {
+	margin-bottom: 0;
+}
+
+.quote-msg cite {
+	display: block;
+	text-align: center;
+}
+
 .spotlights .full-wrapper {
 	@include flex-setup(flex-start, center, wrap);
 
@@ -174,14 +198,43 @@ body {
 
 .spotlights .spotlight {
 	width: 100%;
-	padding-left: 4rem;
-	padding-right: 4rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	@media (min-width: 400px) {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	@media (min-width: 750px) {
+		width: 33.333%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.spotlights img {
+	margin-left: auto;
+	margin-right: auto;
 
 	@media (min-width: 400px) {
 	}
 
 	@media (min-width: 750px) {
-		width: 33.333%;
+		max-width: 100%;
+	}
+}
+
+.spotlights .spotlight-4up {
+	width: 100%;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	@media (min-width: 400px) {
+	}
+
+	@media (min-width: 750px) {
+		width: 25%;
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -250,16 +303,17 @@ footer {
 	}
 }
 
-footer .copyright,
-footer .nav {
+footer .switcher,
+footer .nav,
+footer .copyright {
 	width: 100%;
 	@media (min-width: 750px) {
-		width: 50%;
+		width: 33.33%;
 	}
 }
 
 footer .copyright {
-	order: 2;
+	order: 3;
 	@media (min-width: 750px) {
 		order: 1;
 	}
@@ -268,11 +322,20 @@ footer .copyright {
 footer .nav {
 	order: 1;
 	@media (min-width: 750px) {
+		order: 3;
+	}
+}
+
+footer .switcher {
+	text-align: center;
+	order: 2;
+	@media (min-width: 750px) {
 		order: 2;
 	}
 }
 
 footer .nav ul,
+footer .switcher select,
 footer .copyright p {
 	margin-bottom: 0.25rem;
 }

@@ -32,6 +32,11 @@ $font-weight-bold: 600;
 $font-weight-heading: 300;
 
 //
+// default font settings for emphasized text
+//
+$em-font-stack: "Merriweather", "Georgia", serif;
+
+//
 // set h1 size, h2-h6 calculated this
 //
 $font-desktop-h1-size: 5rem;
@@ -65,12 +70,17 @@ $heading-bottom-margin: 2rem;
 	color: #c09f80; // tan
 }
 
+$color-quote: #e60c26;
+
 // warm tones
 $color-grain: #d7cec7;
 $color-blackboard: #565656;
 $color-oxblood: #76323f;
 $color-oxblood: #e60c26;
+$color-oxblood: #7b74b6;
 $color-tan: #c09f80;
+
+$color-testimonial: lighten($color-quote, 47.5%);
 
 $color-page-bg: $color-grain;
 $color-header-bg: $color-oxblood;
