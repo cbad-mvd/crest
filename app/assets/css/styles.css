@@ -410,13 +410,24 @@ img {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #333;
+a:link {
+  color: #4639b0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4639b0;
   text-decoration: none;
 }
 
 a:hover {
   color: #cc2e2e;
+  text-decoration: none;
+}
+
+a:active {
+  color: #4639b0;
+  text-decoration: none;
 }
 
 /* Buttons
@@ -1236,9 +1247,9 @@ nav ul {
   background-color: transparent;
   border-width: 1px 0 0 0;
   border-style: solid;
-  -o-border-image: linear-gradient(to right, transparent, #ccc, transparent) 100% 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#ccc), to(transparent)) 100% 1;
-     border-image: linear-gradient(to right, transparent, #ccc, transparent) 100% 1;
+  -o-border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0)) 100% 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(#ccc), to(rgba(0, 0, 0, 0))) 100% 1;
+     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0)) 100% 1;
   padding-top: 5rem;
 }
 
@@ -1258,18 +1269,18 @@ nav ul {
 .feature {
   border-width: 0 1px 0 0;
   border-style: solid;
-  -o-border-image: linear-gradient(to bottom, transparent, #ccc, transparent) 1 100%;
-     border-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#ccc), to(transparent)) 1 100%;
-     border-image: linear-gradient(to bottom, transparent, #ccc, transparent) 1 100%;
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(#ccc), to(rgba(0, 0, 0, 0))) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0)) 1 100%;
   min-height: 30rem;
 }
 
 .feature:last-child {
   border-width: 1px 0 0 0;
   border-style: solid;
-  -o-border-image: linear-gradient(to right, transparent, #ccc, transparent) 100% 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#ccc), to(transparent)) 100% 1;
-     border-image: linear-gradient(to right, transparent, #ccc, transparent) 100% 1;
+  -o-border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0)) 100% 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(#ccc), to(rgba(0, 0, 0, 0))) 100% 1;
+     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0)) 100% 1;
   border-right: none;
   padding-top: 6rem;
 }

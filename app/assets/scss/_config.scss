@@ -8,6 +8,7 @@ $charlie_primary: #fffedf; // yellow
 $delta_primary: #2a2c31; // blue
 $echo_primary: #dfba69; // accent
 $alpha_gray: #333; //black
+$alpha_purple: #4639b0;
 
 $color-bodytext: $alpha_gray;
 $color-headings: $alpha_gray;
@@ -18,6 +19,7 @@ $color-headings-highlight: $alpha_gray;
 // link colors
 //
 $color-link: $alpha_gray;
+$color-link: $alpha_purple;
 $color-link-hover: lighten($alpha_primary, 20%);
 
 //

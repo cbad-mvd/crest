@@ -17,7 +17,7 @@ Table of contents
 @import "ui";
 
 /*
- * some basic stuff for demo page
+ * local extends
  */
 .hidden {
 	display: none;
@@ -63,4 +63,28 @@ Table of contents
 .side-by-side > div,
 .side-by-side > ul {
 	width: 50%;
+}
+
+.quiklinks {
+	color: $color-link;
+}
+
+.quiklinks a.sublist {
+	display: block;
+	margin-left: 30px;
+}
+
+.founders-list {
+	display: block;
+	margin-top: 6px;
+	margin-left: 25px;
+}
+
+.member-title {
+	margin-bottom: 1rem;
+}
+.member-list {
+	text-align: left;
+	list-style-position: outside;
+	padding: 0 3rem;
 }
