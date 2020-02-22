@@ -1713,6 +1713,7 @@ nav ul {
 
 .page-intro p {
   text-align: justify;
+  text-align: left;
   padding: 0 2rem;
 }
 
