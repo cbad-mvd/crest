@@ -727,7 +727,7 @@ body {
 }
 
 .page .mainheader {
-  background-color: #7b74b6;
+  background-color: #0090d3;
   border-radius: 0;
   position: relative;
 }
@@ -1678,7 +1678,7 @@ nav ul {
 .layout-two input[type="reset"]:focus,
 .layout-two input[type="button"]:focus {
   background-color: transparent;
-  color: #7b74b6;
+  color: #0090d3;
   border-color: #888;
   outline: 0;
 }

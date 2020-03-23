@@ -17,10 +17,10 @@ var quoteBG_orange = "#fef2e3";
 var quoteBG_lime = "#f6fae6";
 
 // @ts-ignore
-$(document).ready(function() {
+$(document).ready(function () {
 	function setMainHeader() {
-		var bgColor = headerBG_purple;
-		var qColor = quoteBG_purple;
+		var bgColor = headerBG_blue;
+		var qColor = quoteBG_blue;
 		var txtColor = "#f7f5f4";
 		//alert($("#switch").val());
 		// @ts-ignore
@@ -73,7 +73,7 @@ $(document).ready(function() {
 	setMainHeader();
 
 	// @ts-ignore
-	$("#switch").change(function() {
+	$("#switch").change(function () {
 		setMainHeader();
 	});
 });
