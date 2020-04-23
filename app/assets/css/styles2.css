@@ -919,6 +919,7 @@ body {
   min-height: 20rem;
   background-color: #d7cec7;
   background-color: #fee7e9;
+  background-color: #e7f8ff;
 }
 
 .testimonials .quote-msg {
@@ -1756,8 +1757,8 @@ nav ul {
 
 .founders-list {
   display: block;
-  margin-top: 6px;
-  margin-left: 25px;
+  margin-top: 0.25rem;
+  margin-left: 1rem;
 }
 
 .member-title {
@@ -1770,7 +1771,21 @@ nav ul {
   padding: 0 3rem;
 }
 
-.faq-title {
+.pgf-title {
   margin-bottom: 0.5rem;
+}
+
+.gmap {
+  padding: 1.0rem;
+  background-color: #dddddd;
+}
+
+.gmap iframe {
+  max-width: 100%;
+}
+
+.spacer {
+  min-height: 6rem;
+  background-color: #f6f6f6;
 }
 /*# sourceMappingURL=styles2.css.map */
