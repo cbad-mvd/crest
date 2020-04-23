@@ -858,7 +858,7 @@ footer .nav {
 @media (min-width: 750px) {
   footer .copyright,
   footer .nav {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -893,6 +893,7 @@ footer .nav {
 footer .nav ul,
 footer .copyright p {
   margin-bottom: 0.25rem;
+  text-align: center;
 }
 
 body.style-guide {
@@ -1202,7 +1203,7 @@ nav ul {
 
 @media (min-width: 750px) {
   .copyright {
-    text-align: left;
+    text-align: center;
   }
 }
 

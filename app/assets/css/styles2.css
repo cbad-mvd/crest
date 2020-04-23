@@ -1126,6 +1126,7 @@ footer .copyright {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    width: 100%;
   }
 }
 
@@ -1517,7 +1518,7 @@ nav ul {
 
 @media (min-width: 750px) {
   .copyright {
-    text-align: left;
+    text-align: center;
   }
 }
 
